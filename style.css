@@ -143,7 +143,6 @@ h3 {
 }
 
 .topbar-button,
-.music-toggle,
 .secondary-button,
 .chapter-button,
 .primary-button {
@@ -154,7 +153,6 @@ h3 {
 }
 
 .topbar-button,
-.music-toggle,
 .secondary-button,
 .chapter-button {
   background: rgba(255, 255, 255, 0.84);
@@ -163,7 +161,6 @@ h3 {
 }
 
 .topbar-button,
-.music-toggle,
 .secondary-button {
   padding: 0.9rem 1.2rem;
 }
@@ -187,7 +184,6 @@ h3 {
 }
 
 .topbar-button:hover,
-.music-toggle:hover,
 .secondary-button:hover,
 .chapter-button:hover,
 .primary-button:hover {
@@ -314,21 +310,69 @@ h3 {
   text-align: center;
 }
 
+.hub-subtitle {
+  max-width: 36rem;
+  margin: 0.8rem auto 0;
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
 .chapter-nav {
   justify-content: center;
 }
 
 .chapter-stage {
-  margin-top: 1.2rem;
-  min-height: 42rem;
+  width: min(1100px, calc(100vw - 2rem));
+  max-height: min(88vh, 52rem);
   border-radius: 30px;
   padding: clamp(1rem, 2vw, 1.5rem);
+  overflow: auto;
+}
+
+.chapter-stage-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 55;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.chapter-overlay-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(92, 51, 76, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.panel-topbar {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0.9rem;
+}
+
+.back-button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.85rem 1.2rem;
+  background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(255,240,247,0.92));
+  color: #74465d;
+  box-shadow: var(--shadow-strong);
+  cursor: pointer;
+  font-weight: 800;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.back-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
 }
 
 .chapter-panel {
   display: none;
-  min-height: calc(42rem - 3rem);
   animation: panelFade 0.45s ease;
+  width: 100%;
+  min-height: 100%;
 }
 
 .chapter-panel.active {
@@ -344,6 +388,11 @@ h3 {
 .panel-body {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.chapter-panel.active .panel-body,
+.chapter-panel.active .panel-intro {
+  width: 100%;
 }
 
 .spotlight-card,
@@ -736,6 +785,11 @@ h3 {
 
   .game-area {
     height: 15rem;
+  }
+
+  .chapter-stage {
+    width: 100%;
+    max-height: 90vh;
   }
 }
 
