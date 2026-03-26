@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SidOmi | Our Love Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
+  <div class="cursor-heart"></div>
+
+  <div class="page-shell">
+    <header class="hero">
+      <div class="particles" id="particles"></div>
+      <div class="floating-text text-one">SidOmi 💕</div>
+      <div class="floating-text text-two">7 years and counting ✨</div>
+      <div class="floating-text text-three">Forever with you 🤍</div>
+      <div class="floating-text text-four">Omkar ❤️ Siddhi</div>
+
+      <nav class="topbar">
+        <div class="brand">SidOmi</div>
+        <div class="topbar-actions">
+          <button class="topbar-button" id="openLetterTop" type="button">Open My Heart 💌</button>
+          <button class="music-toggle" id="musicToggle" type="button" aria-label="Toggle background music">
+            <span id="musicState">Play Music</span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">A private little world of love</p>
+        <h1>Omkar, this little world is made just for you 💖</h1>
+        <p class="hero-subtitle">
+          7 beautiful years completed, our 8th is going on… and forever still doesn’t feel long enough with you ✨
+        </p>
+        <div class="hero-badges">
+          <span>28 March 2019</span>
+          <span>7 years completed</span>
+          <span>8th year going on</span>
+        </div>
+        <div class="hero-actions">
+          <button class="primary-button" type="button" data-target="anniversary">Enter Our Love Story</button>
+          <button class="secondary-button" type="button" data-target="messages">Show Me Your Love</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="story-app">
+      <section class="chapter-nav-wrap">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Open each chapter like a page</p>
+          <h2>Our Love Story</h2>
+        </div>
+        <div class="chapter-nav" role="tablist" aria-label="Love story sections">
+          <button class="chapter-button active" type="button" data-target="anniversary" role="tab" aria-selected="true">Happy Us</button>
+          <button class="chapter-button" type="button" data-target="story" role="tab" aria-selected="false">Our Story</button>
+          <button class="chapter-button" type="button" data-target="messages" role="tab" aria-selected="false">Love Notes</button>
+          <button class="chapter-button" type="button" data-target="journey" role="tab" aria-selected="false">Journey</button>
+          <button class="chapter-button" type="button" data-target="game" role="tab" aria-selected="false">Mini Game</button>
+          <button class="chapter-button" type="button" data-target="future" role="tab" aria-selected="false">Forever Plans</button>
+          <button class="chapter-button" type="button" data-target="heart" role="tab" aria-selected="false">Heart Letter</button>
+        </div>
+      </section>
+
+      <section class="chapter-stage">
+        <article class="chapter-panel active" id="anniversary" role="tabpanel">
+          <div class="panel-intro">
+            <p class="eyebrow">Happy us</p>
+            <h3>Happy Us 💕</h3>
+          </div>
+          <div class="panel-body">
+            <div class="anniversary-card spotlight-card">
+              <p>28 March 2019 — the day our story began.</p>
+              <p>7 years of love…</p>
+              <p>7 years of laughter, fights, food, memories, and growing together.</p>
+              <p>And now our 8th year is going on.</p>
+              <p>After everything we’ve been through, it still feels like just the beginning.</p>
+              <p>There are still so many memories to make, so many dreams to live, and a whole lifetime waiting for us.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="chapter-panel" id="story" role="tabpanel" hidden>
+          <div class="panel-intro">
+            <p class="eyebrow">How we became us</p>
+            <h3>Our Story</h3>
+          </div>
+          <div class="panel-body">
+            <div class="story-grid">
+              <article class="story-card"><span class="story-icon">💌</span><p>You didn’t even propose directly… you asked through a friend 😄</p></article>
+              <article class="story-card"><span class="story-icon">🌙</span><p>We started with late night phone calls</p></article>
+              <article class="story-card"><span class="story-icon">🤫</span><p>Then came our silent meetings… when no one knew about us</p></article>
+              <article class="story-card"><span class="story-icon">🎒</span><p>Back when I was still in school</p></article>
+              <article class="story-card"><span class="story-icon">🚗</span><p>Our first long drive to Poikhadi hill station 🚗</p></article>
+              <article class="story-card"><span class="story-icon">💞</span><p>From there… we didn’t just grow, we became us</p></article>
+            </div>
+          </div>
+        </article>
+
+        <article class="chapter-panel" id="messages" role="tabpanel" hidden>
+          <div class="panel-intro">
+            <p class="eyebrow">Little things I want you to know</p>
+            <h3>Love Messages</h3>
+          </div>
+          <div class="panel-body">
+            <div class="messages-grid">
+              <article class="message-card">You are my safest place 💗</article>
+              <article class="message-card">We fight a lot, but I would still choose you every single time</article>
+              <article class="message-card">Eating together is our love language 🍕</article>
+              <article class="message-card">7 years later… and I still get butterflies</article>
+              <article class="message-card">No one can ever love me the way you do</article>
+              <article class="message-card">You make everything feel okay</article>
+              <article class="message-card">My favorite place will always be with you</article>
+              <article class="message-card">You are not just my love, you are my peace</article>
+            </div>
+            <div class="more-love-wrap">
+              <button class="primary-button" id="showMoreLove" type="button">Show More Love 💌</button>
+              <div class="extra-message" id="extraMessage" aria-live="polite"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="chapter-panel" id="journey" role="tabpanel" hidden>
+          <div class="panel-intro">
+            <p class="eyebrow">Every step still feels close to my heart</p>
+            <h3>Our Journey</h3>
+          </div>
+          <div class="panel-body">
+            <div class="timeline">
+              <div class="timeline-item"><span>28 March 2019</span><p>We met</p></div>
+              <div class="timeline-item"><span>Beginning</span><p>First phone call ☎️</p></div>
+              <div class="timeline-item"><span>Secret chapter</span><p>Secret meetings 🤫</p></div>
+              <div class="timeline-item"><span>Young love</span><p>School days love ❤️</p></div>
+              <div class="timeline-item"><span>Memory drive</span><p>First long drive 🚗</p></div>
+              <div class="timeline-item"><span>Our favorite habit</span><p>Food adventures 🍜</p></div>
+              <div class="timeline-item"><span>Real love</span><p>Fights and making up 💞</p></div>
+              <div class="timeline-item"><span>Today</span><p>7 years completed</p></div>
+              <div class="timeline-item"><span>Now</span><p>8th year going strong ✨</p></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="chapter-panel" id="game" role="tabpanel" hidden>
+          <div class="panel-intro">
+            <p class="eyebrow">A tiny playful corner just for us</p>
+            <h3>Catch My Love 💖</h3>
+          </div>
+          <div class="panel-body">
+            <div class="game-card">
+              <p class="game-text">Tap the floating hearts and collect all the love you can.</p>
+              <div class="score-board">Love Collected: <span id="score">0</span></div>
+              <div class="game-area" id="gameArea" aria-label="Heart catching game area"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="chapter-panel" id="future" role="tabpanel" hidden>
+          <div class="panel-intro">
+            <p class="eyebrow">What I still dream of with you</p>
+            <h3>Our Forever Plans ✨</h3>
+          </div>
+          <div class="panel-body">
+            <p class="future-intro">7 years done, 8th going on… and still so many dreams left to live together.</p>
+            <div class="future-grid">
+              <article class="future-card">More long drives together 🚗</article>
+              <article class="future-card">Trying new food forever 🍜</article>
+              <article class="future-card">Late night talks 🌙</article>
+              <article class="future-card">More anniversaries together 💞</article>
+              <article class="future-card">Laughing through everything</article>
+              <article class="future-card">Growing together always 🤍</article>
+              <article class="future-card">Building our life together</article>
+            </div>
+          </div>
+        </article>
+
+        <article class="chapter-panel chapter-letter-panel" id="heart" role="tabpanel" hidden>
+          <div class="panel-intro">
+            <p class="eyebrow">The most important part</p>
+            <h3>For You, Always</h3>
+          </div>
+          <div class="panel-body heart-preview-card">
+            <p class="letter-preview">There are some feelings too deep for short messages, so I kept them safe here for you.</p>
+            <button class="primary-button" id="openLetter" type="button">Open My Heart 💌</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Made with all my love, Siddhi 💖</p>
+      <p>SidOmi • 7 years completed • 8th going on • forever to go ✨</p>
+      <p>And one day… our forever will become our home 🤍</p>
+    </footer>
+  </div>
+
+  <div class="modal" id="letterModal" aria-hidden="true">
+    <div class="modal-backdrop" id="closeModalBackdrop"></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+      <button class="modal-close" id="closeLetter" type="button" aria-label="Close love letter">×</button>
+      <p class="eyebrow">A love letter from Siddhi to Omkar</p>
+      <h3 id="letterTitle">Open My Heart 💌</h3>
+      <div class="letter-body">
+        <p>My Omkar,</p>
+        <p>When I look back at 28 March 2019, I smile so softly because that was the day my heart quietly found its person. Our story began in the cutest way, with you asking through a friend instead of proposing directly, and somehow even that became one of the sweetest parts of us. From exchanged numbers to long phone calls, from hidden smiles to silent meetings when no one knew about us, from those school days to now, every chapter has carried your name in my heart.</p>
+        <p>I still think about our first long drive to Poikhadi hill station, about the feeling of being with you and knowing that something beautiful had started. Since then, we have filled our love with endless conversations, food adventures, silly moments, fights, understanding, and the kind of bond that keeps choosing each other again and again.</p>
+        <p>7 years are completed, and our 8th year is going on. That sounds like such a big number, but with you, it still feels like the beginning of something that will never stop growing. Through every season, you have been caring, loving, hardworking, and so full of effort. You always try to make me happy. You make space for my feelings. You make me feel protected. You make me feel at home.</p>
+        <p>With you, I have felt a kind of safety that is rare and beautiful. No one can ever love me the way you do. That is the truth my heart knows without any doubt. Even when we fight, even when life gets messy, even when the days are hard, I still look at you and feel grateful that my love is you.</p>
+        <p>Thank you for every call, every meeting, every drive, every meal, every apology, every effort, every laugh, and every time you stood beside me. Thank you for being my peace, my comfort, my favorite person, and the one I want in every version of my future.</p>
+        <p>Whatever happens in our life, we will face it together. We will fight for each other, stand by each other, and grow together. We will hustle through life side by side, chasing our dreams.</p>
+        <p>One day, we will build a beautiful life together, get married, create our own little world, and have a beautiful family filled with love.</p>
+        <p>7 years done, 8th going on… and forever still waiting for us.</p>
+        <p>I love you, always.</p>
+        <p class="letter-sign">Forever yours,<br>Siddhi</p>
+      </div>
+    </div>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8d4d2c051.mp3?filename=romantic-background-music-112191.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
